@@ -9,9 +9,14 @@ Template.body.events({
 		let verb = template.find('#verb').value;
 
 
-		console.log('Hello, world');
-
+		
+		let madLib = exclamation + '!  you say, as you ' + adverb 
+			+' jump onto your '+ animal+' and '+ verb +' into the sunset.'; 
+		console.log(madLib); 
 		console.log( exclamation + '!  you say, as you ' + adverb 
 			+' jump onto your '+ animal+' and '+ verb +' into the sunset.'  );
+		$('#header').hide();
+		$('#header').text(madLib).fadeIn('slow').css('color', '#0000ff');
 	}
 });
+
